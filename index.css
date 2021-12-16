@@ -1,0 +1,103 @@
+html, body {
+    margin: 10;
+    padding: 10;
+}
+
+h3 {
+    text-align: center;
+    color: Crimson;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 420px;
+    border: solid black;
+}
+
+.grid div {
+    width: 15px;
+    height: 15px;   
+}
+
+.pac-dot {
+    background-color: black;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: black;
+}
+
+.power-pellet {
+    background-color: green;
+    border-radius: 7.5px;
+}
+
+.pacman {
+    background-color: orange;
+    border: 0px solid white;
+    clip-path: polygon(51% 52%, 94% 29%, 83% 22%, 76% 20%, 76% 20%, 70% 18%, 62% 16%, 66% 16%, 60% 16%, 55% 15%, 49% 15%, 42% 16%, 34% 18%, 29% 21%, 23% 28%, 19% 37%, 15% 46%, 13% 55%, 13% 64%, 13% 77%, 16% 84%, 22% 89%, 30% 89%, 40% 92%, 48% 93%, 58% 93%, 65% 93%, 70% 91%, 77% 87%, 85% 83%, 90% 79%, 91% 75%); 
+    animation-name: eat;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.blinky {
+    background-color: red;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pinky {
+    background-color: pink;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.inky {
+    background-color: aqua;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.clyde {
+    background-color: orange;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@keyframes eat {
+  0% {
+    clip-path: polygon(51% 52%, 94% 29%, 83% 22%, 76% 20%, 76% 20%, 70% 18%, 62% 16%, 66% 16%, 60% 16%, 55% 15%, 49% 15%, 42% 16%, 34% 18%, 29% 21%, 23% 28%, 19% 37%, 15% 46%, 13% 55%, 13% 64%, 13% 77%, 16% 84%, 22% 89%, 30% 89%, 40% 92%, 48% 93%, 58% 93%, 65% 93%, 70% 91%, 77% 87%, 85% 83%, 90% 79%, 91% 75%); ;
+  }
+  25% {
+    clip-path: polygon(49% 51%, 86% 39%, 77% 28%, 62% 22%, 47% 18%, 30% 18%, 21% 27%, 15% 48%, 16% 68%, 25% 81%, 39% 85%, 53% 85%, 66% 84%, 75% 80%, 83% 74%, 86% 68%);
+
+  }
+  50% {
+    clip-path: polygon(50% 49%, 87% 31%, 77% 25%, 65% 21%, 55% 20%, 39% 21%, 29% 28%, 24% 39%, 20% 53%, 20% 69%, 25% 75%, 36% 80%, 48% 81%, 59% 83%, 69% 84%, 74% 80%, 79% 77%, 83% 72%, 89% 67%, 90% 62%);
+  }
+
+  
+  75% {
+    clip-path: polygon(49% 50%, 90% 41%, 84% 33%, 71% 25%, 59% 19%, 45% 18%, 26% 23%, 18% 36%, 15% 53%, 15% 64%, 19% 78%, 25% 82%, 36% 87%, 47% 86%, 57% 87%, 63% 85%, 70% 81%, 78% 77%, 85% 73%, 88% 67%, 91% 62%, 93% 57%);
+  }
+  100% {
+clip-path: circle(36.1% at 50% 50%);
+  }
+}
